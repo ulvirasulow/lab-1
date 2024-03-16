@@ -1,0 +1,16 @@
+import math
+eps= 0.001
+x= 0.5
+i= 2
+fakt=1
+z1=1
+s=0
+z=x
+while math.fabs(z)>eps:
+    s=s+z
+    z1= -z1*x*x
+    fakt*= i* (i+1)
+    z= z1/fakt
+    i= i+2
+    sin_x= math.sin(x)
+    print('S=', s)
